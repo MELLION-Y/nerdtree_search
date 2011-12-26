@@ -8,8 +8,8 @@ A NERDTree plugin that adds grep capabilities to the NERDTree menu
 
 Installation
 -------------------------------------
-# install https://github.com/scrooloose/nerdtree
-# drop the nerdtree_search.vim file into your nerdtree_plugin directory
+1. install https://github.com/scrooloose/nerdtree
+2. drop the nerdtree_search.vim file into your nerdtree_plugin directory
 
 Usage
 -------------------------------------
