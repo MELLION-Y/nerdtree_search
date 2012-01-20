@@ -1,11 +1,10 @@
-
 if exists("g:loaded_nerdtree_search_menuitem")
     finish
 endif
 let g:loaded_nerdtree_search_menuitem = 1
 
 call NERDTreeAddMenuItem({
-            \ 'text': '(s)Search',
+            \ 'text': '(s)earch',
             \ 'shortcut': 's',
             \ 'callback': 'NERDTreeSearchFile',
             \ 'isActiveCallback': 'NERDTreeSearchFileActive' })
@@ -28,7 +27,7 @@ function! NERDTreeSearchFile()
         " GREP METHOD:
         " jum``p to the previous window, as grep will attempt to open the first match in the current window
         exec "wincmd p"                     
-        let to_run = "grep -r " . cmd . " " . cwd
+        let to_run = "grep -r " . cmd . " \"" . cwd . "\""
         exec to_run
         " open the quicklist 
         exec "cw"
